@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>BeerTime</title>
+    <meta name="title" content="BeerHouse" />
+    <meta name="description" content="BeerHouse German restaurant" />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./badge-1.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">BeerTime</p>
+    </div>
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span"> Somewhere across the universe</span>
+        </address>
+
+        <div class="separator"></div>
+
+        <a href="tel:054-5277507" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">054-5277507</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:alexkorablev4@gmail.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Beertime@restaurant.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo1.png"
+            width="160"
+            height="50"
+            alt="BeerHouse - Home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo1.png"
+              width="130"
+              height="50"
+              alt="BeerHouse"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span"><bdi class="name"> Home Page</bdi></span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span"><bdi class="name"> About us</bdi></span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#Beer" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span"> <bdi class="name"> Beer Menu</bdi></span>
+              </a>
+            </li>
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+                <span class="span"><bdi class="name">Menu</bdi></span>
+              </a>
+            </li>
+            
+            
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span"> Get in touch</span>
+              </a>
+            </li>
+            
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Location</p>
+
+            <address class="body-4"><bdi class="name">
+              Somewhere around the universe               
+            </bdi>
+            </address>
+
+            <p class="body-4 navbar-text">
+               Sunday-Thursday 16:00-23:00
+               <br />
+                 
+              Friday-Saturday  14:00-02:00
+            </p>
+
+            <a href="alexkorablev4@gmail.com" class="body-4 sidebar-link"
+              >Beertime@gmail.com</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label"> Plan an event</p>
+
+            <a
+              href="tel:054-5277507"
+              class="body-1 contact-number hover-underline"
+            >
+              054-5277507
+            </a>
+          </div>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-1.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">Beer n' Beef</p>
+
+              <h1 class="display-1 hero-title slider-reveal"> Cold beer</h1>
+
+              <p class="body-2 hero-text slider-reveal">from all around the world</p>
+
+              <a href="#Beer" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Beer menu</span>
+
+                <span class="text text-2" aria-hidden="true">Beer Menu</span>
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-2.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">Beef Time ~ </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Beef smoked over <br />
+                wood
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come with family & feel the joy of mouthwatering food
+              </p>
+
+              <a href="#menu" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-3.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Beef n'Beer
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Come and taste  <br />
+                The best burgers in the world
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                OR maybe in the universe
+              </p>
+
+              <a href="#menu" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn
+          >
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn
+          >
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+
+          <a href="#footer" class="hero-btn has-after">
+            <img
+              src="./assets/images/hero-icon.png"
+              width="48"
+              height="48"
+              alt="booking icon"
+            />
+
+            <span class="label-2 text-center span"> Contact us</span>
+          </a>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section
+          class="section service bg-black-10 text-center"
+          aria-label="service"
+        >
+          <div class="container">
+            <p class="section-subtitle label-2">Ultimate place</p>
+
+            <h2 class="headline-1 section-title">For Beer lovers</h2>
+
+            <p class="section-text">
+              Welcome to Beef n' Beer, where amazing burgers, steaks, and smoked beef meet an impressive selection of global beers. Indulge in mouthwatering flame-grilled burgers, tender steaks, and tantalizing smoked beef. Explore our diverse beer collection from around the world. At Beef n' Beer, we deliver exceptional flavors and a memorable dining experience.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <a href="#menu" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/matt-connor-9Qs_9n2oSJo-unsplash.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#menu">Meat</a>
+                    </h3>
+
+                    <a href="#menu" class="btn-text hover-underline label-2"
+                      >View Menu</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#menu" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/amirali-mirhashemian-d-yAWqj-DRg-unsplash.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Appetizers"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#menu">Hamburgers</a>
+                    </h3>
+
+                    <a href="#menu" class="btn-text hover-underline label-2"
+                      >View Menu</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#Beer" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/fabio-alves-yTswJdtUTMQ-unsplash.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Drinks"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#Beer">Beers</a>
+                    </h3>
+
+                    <a href="#Beer" class="btn-text hover-underline label-2"
+                      >View Menu</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-1.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1 move-anim"
+            />
+            <img
+              src="./assets/images/shape-2.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section
+          class="section about text-center"
+          aria-labelledby="about-label"
+          id="about"
+        >
+          <div class="container">
+            <div class="about-content">
+              <p class="label-2 section-subtitle" id="about-label"> Who are we </p>
+
+              <h2 class="headline-1 section-title">
+                Beef n' Beer
+              </h2>
+
+              <p class="section-text">
+                Step into Beef n' Beer and immerse yourself in a dining experience that harmoniously blends a captivating ambiance, exceptional cuisine, and an extensive selection of beers. The warm and inviting atmosphere envelops you as soon as you enter, with cozy booths and rustic décor creating an intimate and laid-back setting. The tantalizing aroma of sizzling burgers and smoked meats fills the air, igniting your appetite and setting the stage for an unforgettable meal. Indulge in their signature flame-grilled burgers, crafted with the finest ingredients and bursting with flavors that will leave you craving more. The steaks are cooked to perfection, offering a juicy and tender experience that will satisfy even the most discerning palates. And let's not forget the smoked beef, a true culinary masterpiece, infused with rich smoky flavors that evoke a sense of comfort and indulgence. Complementing the culinary delights is their impressive beer selection, featuring brews from around the world. From hoppy IPAs to smooth stouts, there's a perfect brew to accompany every dish and enhance your dining experience. Whether you're a foodie seeking the best burgers in town or a beer enthusiast looking to explore new flavors, Beef n' Beer is the ultimate destination that seamlessly blends delectable food, an inviting ambiance, and a global beer journey like no other.
+              </p>
+
+              <div class="contact-label">Contact us </div>
+
+              <a
+                href="tel:03-9580111"
+                class="body-1 contact-number hover-underline"
+                >054-5277507</a
+              >
+            </div>
+
+            <figure class="about-banner">
+              <img
+                src="./assets/images/clem-onojeghuo-zlABb6Gke24-unsplash.jpg"
+                width="570"
+                height="570"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+                data-parallax-item
+                data-parallax-speed="1"
+              />
+
+              <div
+                class="abs-img abs-img-1 has-before"
+                data-parallax-item
+                data-parallax-speed="1.75"
+              >
+                <img
+                  src="./assets/images/jonas-jacobsson-p2KA3Q2lfSw-unsplash.jpg"
+                  width="285"
+                  height="285"
+                  loading="lazy"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+
+              <div class="abs-img abs-img-2 has-before">
+                <img
+                  src="./assets/images/logo1.png"
+                  width="125"
+                  height="126"
+                  loading="lazy"
+                  alt=""
+                  justify="center"
+                />
+              </div>
+            </figure>
+
+            <img
+              src="./assets/images/emojipng.com-1111715.png"
+              width="197"
+              height="194"
+              loading="lazy"
+              alt=""
+              class="shape"
+              backgroundcolor="black"
+            />
+          </div>
+        </section>
+
+        <!-- 
+        - #SPECIAL DISH
+      -->
+
+        <section class="special-dish text-center" aria-labelledby="dish-label" id="Beer">
+          <div class="special-dish-banner">
+            <img
+              src="./assets/images/jouwen-wang-uur6tpuzpLw-unsplash.jpg"
+              width="940"
+              height="900"
+              loading="lazy"
+              alt="special dish"
+              class="img-cover"
+            />
+          </div>
+
+          <div class="special-dish-content bg-black-10 ">
+            <div class="container">
+              <img
+                src="./assets/images/badge-1.png"
+                width="45"
+                height="65"
+                loading="lazy"
+                alt="badge"
+                class="abs-img"
+              />
+
+              <h2 class="headline-1 section-title"> Beer Menu </h2>
+              <h3 class=" taste"> Unfiltred </h3>
+              <h4 class="beer">Edinger</h4>
+              <p class="w3-text-grey"> 1/3 - 25₪  1/2 - 32₪  1L - 55₪ </p>
+              <h4 class="beer">Tucher Weiss</h4>
+              <p class="w3-text-grey">Pale and Cloudy 1/3 - 27₪  1/2 - 33₪ 1L - 55₪ </p>
+              <h4 class="beer">Edelweiss</h4>
+              <p class="w3-text-grey">Feel the Alps 1/3 - 27₪  1/2 - 33₪ 1L - 55₪ </p>
+              <h3 class=" taste">Lager</h3>
+              <h4 class="beer">Tucher </h4>
+              <p  class="w3-text-grey">True lager taste from Nuremberg <br /><bdi class="name"> 1/3 - 27₪  1/2 - 33₪ 1L - 55₪</bdi> </p>
+              <h4 class="beer">Cisk </h4>
+              <p class="w3-text-grey" >Malta's Finest Award Winning Lager beer <br /><bdi class="name"> 1/3 - 27₪  1/2 - 33₪ 1L - 55₪</bdi> </p>
+              <h4 class="beer">Budweisser </h4>
+              <p class="w3-text-grey">Pale lager with a sweet, deep golden body and an aromatic, hoppy foam. 1/3 - 27₪  1/2 - 33₪ 1L - 55₪ </p>
+
+              </p>
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/toppng.com-seats-are-very-limited-buy-your-tickets-today-to-hand-holding-beer-vector-1127x473.png"
+            width="450"
+            height="600"
+            loading="lazy"
+            alt=""
+            class="shape shape-1"
+          />
+
+
+
+          <img
+            src="./assets/images/pngwing.com.png"
+            width="50"
+            height="100"
+            loading="lazy"
+            alt=""
+            class="shape shape-2"
+          />
+        </section>
+
+        <!-- 
+        - #MENU
+      -->
+
+        <section class="section menu" aria-label="menu-label" id="menu">
+          <div class="container">
+            <p class="section-subtitle text-center label-2">
+              Meat section
+            </p>
+
+            <h2 class="headline-1 section-title text-center">Must try</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu112.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Hamburger"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Triple Cheese Burger</a>
+                      </h3>
+
+                      <span class="badge label-1">Recommeded</span>
+
+                      <span class="span title-2">$15.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Tomatoes, green bell pepper, sliced cucumber onion,
+                      olives, and amrican cheese.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/amirali-mirhashemian-JqnuWlHmDfE-unsplash.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Lasagne"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Annother type of hamburger</a>
+                      </h3>
+
+                      <span class="span title-2">$20.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Smoked ad grilled hamburger with chedar cheese and homemade toppings.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/loija-nguyen-NYBnDWeOX2c-unsplash.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Wagyu Steak</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      300g of Wagyu steak with grilled vegetables and potatoes.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/iman-zaker-Et1rVF1YJe8-unsplash.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Ramp Steak</a>
+                      </h3>
+
+                      <span class="badge label-1">New</span>
+
+                      <span class="span title-2">$29.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      450g of Ramp steak with grilled vegetables.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/fabio-alves-IkcWRgegT3s-unsplash.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Olivas Rellenas"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Filet Mignon</a>
+                      </h3>
+
+                      <span class="span title-2">$25.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Perfectly seared Filet Mignon with potatoes.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/albany-capture-DctdUs4Lu2A-unsplash.jpg"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Opu Fish"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Hotdog</a>
+                      </h3>
+
+                      <span class="span title-2">$10.00</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Vegetables,few types of cheese, Mustard and Mayo.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <p class="menu-text text-center">
+              During winter daily from <span class="span">15:00 </span> to
+              <span class="span">23:00 </span>
+            </p>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">View All Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+            <img
+              src="./assets/images/shape-5.png"
+              width="921"
+              height="1036"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+            <img
+              src="./assets/images/shape-6.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-3 move-anim"
+            />
+          </div>
+        </section>
+
+        <!-- 
+        - #TESTIMONIALS
+      -->
+
+        <!-- <section
+          class="section testi text-center has-bg-image"
+          style="background-image: url('./assets/images/testimonial-bg.jpg')"
+          aria-label="testimonials"
+        >
+          <div class="container">
+            <div class="quote">”</div>
+
+            <p class="headline-2 testi-text">
+              I wanted to thank you for inviting me down for that amazing dinner
+              the other night. The food was extraordinary.
+            </p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+
+            <div class="profile">
+              <img
+                src="./assets/images/testi-avatar.jpg"
+                width="100"
+                height="100"
+                loading="lazy"
+                alt="Sam Jhonson"
+                class="img"
+              />
+
+              <p class="label-2 profile-name">Sam Jhonson</p>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- 
+        - #RESERVATION
+      -->
+
+        <section class="reservation">
+          <div class="container">
+            <div class="form reservation-form bg-black-10">
+              <form action="" class="form-left">
+                <h2 class="headline-1 text-center">Online Reservation</h2>
+
+                <p class="form-text text-center">
+                  Booking request
+                  <a href="tel:054-5277507" class="link">054-5277507</a>
+                  or fill out the order form
+                </p>
+
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    autocomplete="off"
+                    class="input-field"
+                  />
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    autocomplete="off"
+                    class="input-field"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="person-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <select name="person" class="input-field">
+                      <option value="1-person">1 Person</option>
+                      <option value="2-person">2 Person</option>
+                      <option value="3-person">3 Person</option>
+                      <option value="4-person">4 Person</option>
+                      <option value="5-person">5 Person</option>
+                      <option value="6-person">6 Person</option>
+                      <option value="7-person">7 Person</option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="calendar-clear-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <input
+                      type="date"
+                      name="reservation-date"
+                      class="input-field"
+                    />
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon-wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <select name="person" class="input-field">
+                      <option value="08:00am">08 : 00 am</option>
+                      <option value="09:00am">09 : 00 am</option>
+                      <option value="010:00am">10 : 00 am</option>
+                      <option value="011:00am">11 : 00 am</option>
+                      <option value="012:00am">12 : 00 am</option>
+                      <option value="01:00pm">01 : 00 pm</option>
+                      <option value="02:00pm">02 : 00 pm</option>
+                      <option value="03:00pm">03 : 00 pm</option>
+                      <option value="04:00pm">04 : 00 pm</option>
+                      <option value="05:00pm">05 : 00 pm</option>
+                      <option value="06:00pm">06 : 00 pm</option>
+                      <option value="07:00pm">07 : 00 pm</option>
+                      <option value="08:00pm">08 : 00 pm</option>
+                      <option value="09:00pm">09 : 00 pm</option>
+                      <option value="10:00pm">10 : 00 pm</option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  autocomplete="off"
+                  class="input-field"
+                ></textarea>
+
+                <button type="submit" class="btn btn-secondary">
+                  <span class="text text-1">
+                    Book A Table</span>
+
+                  <span class="text text-2" aria-hidden="true"
+                    >Won't send anything anywhere</span
+                  >
+                </button>
+              </form>
+
+              <div
+                class="form-right text-center"
+                style="
+                  background-image: url('./assets/images/form-pattern.png');
+                "
+              >
+                <h2 class="headline-1 text-center">Contact Us</h2>
+
+                <p class="contact-label">Booking Request</p>
+
+                <a
+                  href="tel:054-5277507"
+                  class="body-1 contact-number hover-underline"
+                  >054-5277507</a
+                >
+
+                <div class="separator"></div>
+
+                <p class="contact-label">Location</p>
+
+                <address class="body-4">
+                  Somewhere across the universe
+                  
+                </address>
+
+                <p class="contact-label">Opening hours</p>
+
+                <p class="body-4">
+                  Suday-Thursday <br />
+                  16:00 - 23:00
+                  <br />
+                  Friday-Saturday
+                  <br />
+                  16:00 - 2:00
+                </p>
+
+                <p class="contact-label">Happy Hour</p>
+
+                <p class="body-4">
+                  Everyday all day 
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <section class="section features text-center" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle label-2">Why Choose Us</p>
+
+            <h2 class="headline-1 section-title">Our Strength</h2>
+
+            <ul class="grid-list">
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-1.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Huge Smoker</h3>
+
+                  <p class="label-1 card-text">
+                    We will smoke any meat any time
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-2.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Boiling hot food</h3>
+
+                  <p class="label-1 card-text">
+                    Care.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-3.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Nice waitress</h3>
+
+                  <p class="label-1 card-text">
+                    She will smile at you if you're lonely.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-4.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Event & Party</h3>
+
+                  <p class="label-1 card-text">
+                    So everyone can enjoy some great food and beer.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-7.png"
+              width="208"
+              height="208"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1"
+            />
+
+            <img
+              src="./assets/images/shape-8.png"
+              width="120"
+              height="115"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2"
+            />
+          </div>
+        </section>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer section has-bg-image text-center"
+      style="background-image: url('./assets/images/footer-bg.jpg')"
+      id="footer"
+    >
+      <div class="container">
+        <div class="footer-top grid-list">
+          <div class="footer-brand has-before has-after">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="160"
+                height="50"
+                loading="lazy"
+                alt="grilli home"
+              />
+            </a>
+
+            <address class="body-4">
+              Somewhere across the Universe 
+            </address>
+
+            <a href="mailto:alexkorablev4@gmail.com" class="body-4 contact-link"
+              >BeefBeer@gmail.com</a
+            >
+
+            <a href="tel:054-5277507" class="body-4 contact-link"
+              >Booking Request : 054-5277507</a
+            >
+
+            <p class="body-4">Open : 15:00 - 23:00 </p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+           
+
+            <form action="" class="input-wrapper">
+              <div class="icon-wrapper">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Your email"
+                  autocomplete="off"
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Contact us</span>
+
+                <span class="text text-2" aria-hidden="true">Contact us</span>
+              </button>
+            </form>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >About Us</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Our Chefs</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Facebook</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Instagram</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Twitter</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Youtube</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Google Map</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; All Rights Reserved | Crafted by Alex Korablev
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
